@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include('connect.php');
+require_once('connect.php');
 ?>
 <html>
 
@@ -52,30 +52,25 @@ include('connect.php');
           <h1 class="lead">Log In</h1>
           <br>
           <h1><?php echo "5555555555555555555555555"?></h1>
-
 <?php
-require 'vendor/autoload.php';
+$q = 'SELECT * FROM `studied-bounty-235113.traintick.users`WHERE Email="wichapol@gmail.com" ';
+$count=0;
+$queryJobConfig=$bigQuery->query($q);
+$job = $bigQuery->startQuery($queryJobConfig);
+$queryResults = $job->$queryResults();
+if ($queryResults->isComplete()){
+  foreach ($queryResults as $row){
+    ?>
 
-use Google\Cloud\BigQuery\BigQueryClient;
+  
+    <h1><?php echo $row['First_Name']?></h1>
+    
+<?php
 
-$bigQuery = new BigQueryClient();
-
-// Get an instance of a previously created table.
-$dataset = $bigQuery->dataset('traintick');
-$table = $dataset->table('users');
-
-
-
-// Run a query and inspect the results.
-$queryJobConfig = $bigQuery->query(
-    'SELECT * FROM `studied-bounty-235113.traintick.users`'
-);
-$queryResults = $bigQuery->runQuery($queryJobConfig);
-
-foreach ($queryResults as $row) {
-    print_r($row);
+  }
 }
 ?>
+
           <form action="homepage.php" method="POST">
             <div class="form-group">
               <label>Email address</label>
