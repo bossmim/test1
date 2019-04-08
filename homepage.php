@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.1.3.css">
 </head>
 
-<body background="Pic/BG.jpg">
+<body background="/pic/BG.jpg">
 <div class = "bg-img"></div>
 <div class = "main-obj">
   <nav class="navbar navbar-expand-md navbar-light">
@@ -19,7 +19,7 @@
         </a>
         <ul class="navbar-nav mx-auto">
 		 <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          <img class="img-fluid d-block rounded-circle" src="/home/mimwin555/test1/pic/logo.jpg" style="width:140px;height:140px;"></ul>
+          <img class="img-fluid d-block rounded-circle" src="/pic/logo.jpg" style="width:140px;height:140px;"></ul>
       </div>
     </div>
     <ul class="navbar-nav">

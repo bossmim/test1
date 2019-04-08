@@ -16,7 +16,7 @@
       <div class="collapse navbar-collapse" id="navbar6">
         <ul class="navbar-nav mx-auto">
 		 <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          <img class="img-fluid d-block rounded-circle" src="Pic/logo.jpg" style="width:140px;height:140px;"></ul>
+          <img class="img-fluid d-block rounded-circle" src="//pic/logo.jpg" style="width:140px;height:140px;"></ul>
       </div>
     </div>
     <div class="btn-group">
@@ -55,12 +55,12 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-4 col-lg-6 p-2"> <img class="img-fluid d-block mb-3 mx-auto bg-dark" src="Pic/cm.jpg" width="500" alt="Card image cap">
+        <div class="col-4 col-lg-6 p-2"> <img class="img-fluid d-block mb-3 mx-auto bg-dark" src="/pic/cm.jpg" width="500" alt="Card image cap">
           <h6> <b>Chiang Mai</b></h6>
           <p class="mb-3"></p>
           <p class="mb-0">&nbsp;</p>
         </div>
-        <div class="col-4 col-lg-6 p-2" style=""> <img class="img-fluid d-block mb-3 mx-auto" src="Pic/lp.jpg" width="500">
+        <div class="col-4 col-lg-6 p-2" style=""> <img class="img-fluid d-block mb-3 mx-auto" src="/pic/lp.jpg" width="500">
           <h6> <b>Lampang</b></h6>
           <p class="mb-3"></p>
           <p class="mb-0">&nbsp;</p>
@@ -78,12 +78,12 @@
       <div class="py-2 text-center">
         <div class="container">
           <div class="row">
-            <div class="col-4 col-lg-6 p-2"> <img class="img-fluid d-block mb-3 mx-auto" src="Pic/au.jpg" width="500" alt="Card image cap">
+            <div class="col-4 col-lg-6 p-2"> <img class="img-fluid d-block mb-3 mx-auto" src="/pic/au.jpg" width="500" alt="Card image cap">
               <h6><b>Ubon Ratchathani</b></h6>
               <p class="mb-3"></p>
               <p class="mb-0">&nbsp;</p>
             </div>
-            <div class="col-4 col-lg-6 p-2"> <img class="img-fluid d-block mb-3 mx-auto" src="Pic/kk.jpg" width="500" style="">
+            <div class="col-4 col-lg-6 p-2"> <img class="img-fluid d-block mb-3 mx-auto" src="/pic/kk.jpg" width="500" style="">
               <h6> <b>Khon Kaen</b></h6>
               <p class="mb-3"></p>
               <p class="mb-0">&nbsp;</p>
@@ -101,12 +101,12 @@
           <div class="py-2 text-center">
             <div class="container">
               <div class="row">
-                <div class="col-4 col-lg-6 p-2"> <img class="img-fluid d-block mb-3 mx-auto" src="Pic/su.jpg" width="500">
+                <div class="col-4 col-lg-6 p-2"> <img class="img-fluid d-block mb-3 mx-auto" src="/pic/su.jpg" width="500">
                   <h6> <b>Surat Thani</b></h6>
                   <p class="mb-3"></p>
                   <p class="mb-0">&nbsp;</p>
                 </div>
-                <div class="col-4 col-lg-6 p-2"> <img class="img-fluid d-block mb-3 mx-auto" src="Pic/sk.jpg" width="500">
+                <div class="col-4 col-lg-6 p-2"> <img class="img-fluid d-block mb-3 mx-auto" src="/pic/sk.jpg" width="500">
                   <h6> <b>Songkhla</b></h6>
                   <p class="mb-3"></p>
                   <p class="mb-0">&nbsp;</p>

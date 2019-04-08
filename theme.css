@@ -6463,11 +6463,11 @@ html, body {
   background-size: cover;
 }
 
-background{
+background {
     filter: alpha(opacity=50);
     filter: blur(8px);
     -webkit-filter: blur(8px);
-    background-image:url("Pic/BG.jpg"); 
+    background-image: url("/pic/BG.jpg");
 }
 
 .main-obj{
