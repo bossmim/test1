@@ -58,7 +58,7 @@ if($drop1 != "Departure Station" and $drop2 != "Destination Station" and $drop3 
       <div class="collapse navbar-collapse" id="navbar6">
         <ul class="navbar-nav mx-auto">
           <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          <img class="img-fluid d-block rounded-circle" src="Pic/logo.jpg" style="width:140px;height:140px;"></ul>
+          <img class="img-fluid d-block rounded-circle" src="/home/mimwin555/test1/pic/logo.jpg" style="width:140px;height:140px;"></ul>
       </div>
     </div>
     <div class="btn-group">
