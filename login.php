@@ -20,7 +20,7 @@ include('connect.php');
         </a>
         <ul class="navbar-nav mx-auto">
 		 <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          <img class="img-fluid d-block rounded-circle" src="/pic/logo.jpg" style="width:140px;height:140px;"></ul>
+          <img class="img-fluid d-block rounded-circle" src="Pic/logo.jpg" style="width:140px;height:140px;"></ul>
       </div>
     </div>
     <ul class="navbar-nav">
@@ -41,8 +41,8 @@ include('connect.php');
       </div>
     </div>
   </nav>
- 
- 
+
+
   <br>
   <br>
   <div class="py-2">
@@ -54,27 +54,17 @@ include('connect.php');
           <h1><?php echo "5555555555555555555555555"?></h1>
 
 <?php
-require 'vendor/autoload.php';
 
-use Google\Cloud\BigQuery\BigQueryClient;
-
-$bigQuery = new BigQueryClient();
-
-// Get an instance of a previously created table.
-$dataset = $bigQuery->dataset('traintick');
-$table = $dataset->table('users');
-
-
-
-// Run a query and inspect the results.
-$queryJobConfig = $bigQuery->query(
-    'SELECT * FROM `studied-bounty-235113.traintick.users`'
-);
-$queryResults = $bigQuery->runQuery($queryJobConfig);
-
-foreach ($queryResults as $row) {
-    print_r($row);
-}
+    $q='SELECT * FROM `studied-bounty-235113.traintick.users`';
+    $count=0;
+    $queryJobConfig = $bigQuery->query($q);
+    $job = $bigQuery->startQuery($queryJobConfig);
+    $queryResults=$job->queryResults();
+    if ($queryResults->isComplete()){
+      foreach($queryResults as $row){
+        echo $row['First_Name'];
+      }
+    }
 ?>
           <form action="homepage.php" method="POST">
             <div class="form-group">
@@ -114,6 +104,3 @@ foreach ($queryResults as $row) {
 </body>
 
 </html>
-
-
-
