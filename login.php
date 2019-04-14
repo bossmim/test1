@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 
 <html>
-
+<?php
+include('connect.php');
+?>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +20,7 @@
         </a>
         <ul class="navbar-nav mx-auto">
 		 <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-          <img class="img-fluid d-block rounded-circle" src="Pic/logo.jpg" style="width:140px;height:140px;"></ul>
+          <img class="img-fluid d-block rounded-circle" src="/pic/logo.jpg" style="width:140px;height:140px;"></ul>
       </div>
     </div>
     <ul class="navbar-nav">
@@ -50,20 +52,20 @@
           <h1 class="lead">Log In</h1>
           <br>
           <h1><?php echo "5555555555555555555555555"?></h1>
+          <?php
 
-<?php
+          $res = mysqli_query($mysqli,"select * from payment;");
+         if (!mysqli_query($mysqli,"select * from payment;"))
+         {
+         echo("Error description: " . mysqli_error($res));
+         }
 
-    $q='SELECT * FROM `studied-bounty-235113.traintick.users`';
-    $count=0;
-    $queryJobConfig = $bigQuery->query($q);
-    $job = $bigQuery->startQuery($queryJobConfig);
-    $queryResults=$job->queryResults();
-    if ($queryResults->isComplete()){
-      foreach($queryResults as $row){
-        echo $row['First_Name'];
-      }
-    }
-?>
+          while($row = mysqli_fetch_array($res))
+          {
+          echo $row["name"]."ioio";
+          }
+   ?>
+
           <form action="homepage.php" method="POST">
             <div class="form-group">
               <label>Email address</label>
