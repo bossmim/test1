@@ -1,12 +1,13 @@
 <?php
-  require __DIR__ ."/vendor/autoload.php";
+$mysqli = new mysqli('mysql.sys','root','','traintick','null','/cloudsql/project-parallel-237015:asia-east2:traintick;dbname=traintick');
+if($mysqli->connect_errno){
+  echo $mysqli->connect_errno.": ".$mysqli->connect_error;
+}
+else {
+  // code...
+  echo "connected";
+}
 
-  use Google\Cloud\BigQuery\BigQueryClient;
 
-  $projectId = "studied-bounty-235113";
 
-  $bigQuery = new BigQueryClient([
-    "projectId" => $projectId,
-  ]);
-   
 ?>
